@@ -2,20 +2,18 @@
   margin: 0;
   padding: 0;
 }
-#logo{
-  padding: 15px;
 
-float: left;
+
+.logo{
+  padding-top: 15px;
+  float: left;
 
 }
-#appname{
-  float: centre;
-padding: 30px;
-color: white;
-background: grey;
+.appname{
+  font-family: Roboto,Arial,sans-serif;
+  float: left;
+color: black;
 font-size: 25px;
-
-}
-arr.div{
-  padding-left:10px;
+padding-top: 20px;
+padding-left:60px;
 }
