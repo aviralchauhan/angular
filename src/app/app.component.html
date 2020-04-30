@@ -1,17 +1,96 @@
-<div class="header">
-
-    <div class="logo">
-       <img src="https://cdn.shopify.com/s/files/1/0234/8085/t/3/assets/logo.png?0" height="50px" width="90px" />
-    </div>
-    <div class="appname">
-    Application
-      </div>
-
-</div>  
+  
 <div class="body">
-  <img src="https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg"/>
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  <!-- <img class="back"  src="https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg"/> -->
+  
+
+
+     <div class="header">
+
+    
+          <div class="appname">
+          Dev Application
+          </div>
+          <button class="regbtn" (click)="openRegister($event)">
+            Tap to Register
+
+          </button>
+          
+
+
+          <div class="quote">
+            <h1>Get Connected To The World.</h1>
+            <h3>Dev lets you to connet to the people you love.</h3>
+          </div>
+
+
+
+           <!-- login form -->
+
+
+          <form action="action_page.php" method="post">
+  
+
+  <div class="containerlogin">
+    <h1><b>Login </b></h1>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button  class="loginButton" type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container2login">
+    <button type="button" class="cnclbtn">Cancel</button>
+    <span class="psw" style="color: white">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+    </div>
+
+    <!-- sign up -->
+
+
+
+    <div id="id01" class="modal" [ngClass]="{'open' : open}">
+  <span (click)="closeRegister($event)" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="containersignup">
+      
+      <h1>Sign Up</h1>
+      <p style="padding-top: 15px;">Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+      
+
+
+
 
 </div>

@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  open = false;
+  openRegister(event){
+  console.log("display",event);
+  this.open = true;
+
+  }
+  closeRegister(event){
+  console.log("display",event);
+  this.open = false;
+
+  }
 }

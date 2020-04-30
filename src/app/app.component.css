@@ -2,18 +2,258 @@
   margin: 0;
   padding: 0;
 }
+.body{
+      //background-image: url('https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg');
+
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 
 
-.logo{
-  padding-top: 15px;
-  float: left;
+}
+
+.back{
+  height: 600px;
+  width: 1519.2px; 
+  padding-top: none;
 
 }
 .appname{
   font-family: Roboto,Arial,sans-serif;
+  position: absolute;
+  top: 45px;
+  left: 100px;
   float: left;
-color: black;
-font-size: 25px;
-padding-top: 20px;
-padding-left:60px;
+
+  color:white;
+  font-size: 25px;
+ // padding-top: 20px;
+  //padding-left:60px;
+}
+.quote{
+  position: absolute;
+  top: 130px;
+  left: 60px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+  color:white;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-left:60px;
+}
+.regbtn{
+  float: right;
+      background-color:#4CAF50;
+    color: white;
+    padding: 016px;
+    font-weight: bold;
+    margin: 0 18px;
+    border: none;
+
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.signupbtn , .cancelbtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.containersignup {
+  border: none;
+  padding: 16px;
+      text-transform: capitalize;
+
+  /*background-image: url("https://www.jsa.net/wp-content/uploads/2019/05/tech-header-01.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  */
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  
+  padding-top: 50px;
+}
+.modal.open{
+  display: block;
+      background-color: rgba(0,0,0,0.5);
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+ background-color: rgba(255, 255, 255, 0.25);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/* login page */
+
+
+/* Bordered form */
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.loginButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cnclbtn {
+  width: auto;
+    padding: 8px 18px;
+    background-color: #f44336;
+    height: 32px;
+    border: none;
+
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+
+/* Add padding to containers */
+.containerlogin {
+      padding: 16px;
+      height: 100px;
+      width: 230px;
+      position: absolute;
+      top: 384px;
+      float: right;
+      right: 100px;
+      color: white;
+
+}
+
+
+.container2login {
+  padding: 16px;
+    height: 22px;
+    width: 230px;
+    position: absolute;
+    top: 659px;
+    float: right;
+    right: 85px;
+    background-color: transparent;
+
+
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
