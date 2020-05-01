@@ -22,7 +22,7 @@
 .appname{
   font-family: Roboto,Arial,sans-serif;
   position: absolute;
-  top: 45px;
+  top: 40px;
   left: 100px;
   float: left;
 
@@ -33,7 +33,7 @@
 }
 .quote{
   position: absolute;
-  top: 130px;
+  top: 120px;
   left: 60px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 
@@ -53,7 +53,7 @@
 
 }
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=email], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -126,7 +126,7 @@ button:hover {
 }
 .modal.open{
   display: block;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.1);
 
 }
 
@@ -182,12 +182,14 @@ hr {
 
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=email], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px 10px;
+  margin: 12px -2px;
   display: inline-block;
-  border: 1px solid #ccc;
+ // border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
@@ -195,11 +197,13 @@ input[type=text], input[type=password] {
 .loginButton {
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
+  padding: 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
+  margin-right: 88px;
+   border-radius: 5px;
 }
 
 /* Add a hover effect for buttons */
@@ -207,7 +211,7 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Extra style for the cancel button (red) */
+/* Extra style for the cancel button (red) 
 .cnclbtn {
   width: auto;
     padding: 8px 18px;
@@ -216,44 +220,46 @@ button:hover {
     border: none;
 
 }
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
+*/
 
 
 
 /* Add padding to containers */
 .containerlogin {
+    
       padding: 16px;
-      height: 100px;
-      width: 230px;
+      //height: 100px;
+      width: 20%;
       position: absolute;
-      top: 384px;
-      float: right;
-      right: 100px;
+      top: 40%;
+      left: 40%;
       color: white;
+      
+       
 
+}
+.containerlogin h1{
+  border-bottom: 2px solid ;
 }
 
 
-.container2login {
+/*.container2login {
   padding: 16px;
     height: 22px;
     width: 230px;
     position: absolute;
-    top: 659px;
-    float: right;
-    right: 85px;
+    top: 70%;
+    //float: right;
+    right: 40%;
     background-color: transparent;
 
 
-}
+}*/
 
 /* The "Forgot password" text */
+/*
 span.psw {
   float: right;
   padding-top: 16px;
 }
+*/
